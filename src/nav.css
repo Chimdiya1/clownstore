@@ -29,7 +29,12 @@ nav{
     }
 
 @media screen and (max-width:768px){
-
+    nav{
+    height: 8vh;
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+}
     .line{
         width: 30px;
         background-color: rgb(0, 0, 0);
@@ -37,14 +42,15 @@ nav{
         margin: 5px;
     }
     .nav{
-        position: relative;
+        position: fixed;
+
     }
     #logo2{
         display: block;
         position: absolute;
         cursor: pointer;
-        right: 55%;
-        top: 3%;
+        right: 60%;
+        top: 30%;
         z-index: 2;
         color: black;
         text-decoration: none;
@@ -60,7 +66,7 @@ nav{
         position: absolute;
         cursor: pointer;
         right: 85%;
-        top: 2.5%;
+        top: 25%;
         z-index: 2;
         margin-right: auto;
     }
@@ -70,7 +76,6 @@ nav{
     }
     .nav-links{
         margin-top: 10%;
-        position: fixed;
         background: #ffffff;
         flex-direction: column;
         height: 50vh;
