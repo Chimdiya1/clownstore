@@ -6,21 +6,21 @@ const Nav = () => {
     <div className="Nav">
       <nav>
         <div
-          class="hamburger"
+          className="hamburger"
           onClick={() => {
             const navLinks = document.querySelector('.nav-links');
             const links = document.querySelectorAll('.nav-links li');
             navLinks.classList.toggle('open');
           }}
         >
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
+          <div className="line"></div>
+          <div className="line"></div>
+          <div className="line"></div>
         </div>
         <li id="logo2">
           <a href="#">Clown Store</a>
         </li>
-        <ul class="nav-links">
+        <ul className="nav-links">
           <li id="logo">
             <a href="#">Clown Store</a>
           </li>

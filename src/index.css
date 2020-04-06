@@ -44,4 +44,11 @@ body {
   border-radius: 20px;
   margin-bottom: 5%;
 }
+.products{
+  width: 100%;
+  text-align: center;
+}
 
+.products h1{
+  margin: 1em;
+}
