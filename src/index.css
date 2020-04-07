@@ -19,9 +19,12 @@ body {
 }
 
 /*--HOMEPAGE--*/
+.home p{
+  margin-top: 10vh;
 
+}
 .home{
-  height: 90vh;
+  height: 100vh;
   max-width: 100%;
   background-image: url('./assets/homesmall.jpg');
   background-position: center;

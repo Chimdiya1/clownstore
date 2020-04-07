@@ -34,6 +34,7 @@ nav{
     background-color: #ffffff;
     position: fixed;
     width: 100%;
+    margin-bottom: 10vh;
 }
     .line{
         width: 30px;

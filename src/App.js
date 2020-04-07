@@ -4,6 +4,7 @@ import Home from './Components/Home';
 import Products from './Components/Products';
 import { ProductList } from './Components/ProductList';
 import ProductPage from './Components/ProductPage'
+import ShopCart from './Components/ShopCart'
 function App() {
   const ProductPages = ProductList.map((item) => {
     return <ProductPage key={item.id} item={item} />;
@@ -14,6 +15,7 @@ function App() {
       <Home />
       <Products />
       {ProductPages}
+      <ShopCart/>
     </div>
   );
 }
