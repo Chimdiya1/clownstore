@@ -30,12 +30,13 @@
 }
 .row_a{
     height: 50%;
-    width: 100%;
+    max-width: 80%;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid rgb(175, 175, 175);
 }
 .row_a p{
+    font-weight: bold;
     font-size: .8em;
 }
 .row_b p{
@@ -54,5 +55,7 @@
     justify-content: space-around;
     border-bottom: 1px solid rgb(175, 175, 175);
     height: 50%;
+        max-width: 80%;
+
 
 }
