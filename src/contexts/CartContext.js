@@ -7,13 +7,12 @@ const CartContextProvider = (props) => {
     const [cart, setCart] = useState([])
 
     const addItem = (item) => {
-        if (cart.length==0){
-            setCart([...cart, item]);
+        if (cart.length===0){
+            setCart([ item]);
         }
-        else {(cart.forEach((obj) => {if (obj.name != item.name) {
+        else {if (!cart.includes(item)) {
             setCart([...cart, item]);
-        }}))} 
-
+        }}
     }
     return ( 
         <CartContext.Provider value={{cart,addItem}}>
