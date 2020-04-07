@@ -1,6 +1,8 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import '../productItem.css';
+import { CartContext } from '../contexts/CartContext';
 const ProductItem = (props) => {
+  const {addItem} = useContext(CartContext)
     const item = props.item
     return (
       <div className="product_item">
@@ -11,7 +13,10 @@ const ProductItem = (props) => {
         </div>
         <div className="col2">
           <p>{item.shortDesc}</p>
-          <button className="to_cart">Add to Cart</button>
+          <button
+            onClick={()=>addItem(item)}
+            className="to_cart"
+          >Add to Cart</button>
         </div>
       </div>
     );
