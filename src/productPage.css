@@ -62,6 +62,7 @@
 .row3{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10vh;
 }
 .row3 button{
     width: 40%;
