@@ -28,7 +28,7 @@ const ProductPage = (props) => {
         <button onClick={() => addItem(item)} className="to_cart">
           Add to Cart
         </button>
-        <Link to="/products" style={navStyle}>
+        <Link id="see_more"to="/products" style={navStyle}>
           <button className="see_more">See More</button>
         </Link>
       </div>
