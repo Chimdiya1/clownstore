@@ -6,20 +6,31 @@ import { ProductList } from './Components/ProductList';
 import ProductPage from './Components/ProductPage'
 import ShopCart from './Components/ShopCart'
 import CartContextProvider from './contexts/CartContext';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+
 function App() {
   const ProductPages = ProductList.map((item) => {
-    return <ProductPage key={item.id} item={item} />;
+    return (
+      <Route
+        path={'/' + item.id}
+        render={() => <ProductPage key={item.id} item={item} />}
+      />
+    );
   });
   return (
-    <div className="App">
-      <CartContextProvider>
-        <Header />
-        <Home />
-        <Products />
-        {ProductPages}
-        <ShopCart />
-      </CartContextProvider>
-    </div>
+    <Router>
+      <div className="App">
+        <CartContextProvider>
+          <Header />
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/products" component={Products} />
+            <Route path="/cart" component={ShopCart} />
+            {ProductPages}
+          </Switch>
+        </CartContextProvider>
+      </div>
+    </Router>
   );
 }
 

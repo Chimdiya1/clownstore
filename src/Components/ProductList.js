@@ -8,8 +8,8 @@ import clown_shoe from '../assets/clown/clown_shoe.jpg'
 export const ProductList = [
          {
            name: 'Full Clown',
-           id: '#039940',
-           price: '$198.34',
+           id: '039940',
+           price: '100',
            img: clown_full,
            shortDesc:
              'Cottage out enabled was entered greatly prevent message. No procured unlocked an likewise.Dear but what she been over gay felt body.Six principles advantages and use entreaties decisively.',
@@ -18,8 +18,8 @@ export const ProductList = [
          },
          {
            name: 'Clown Hat',
-           id: '#654234',
-           price: '$28.43',
+           id: '654234',
+           price: '20',
            img: clown_hat,
            shortDesc:
              'Cottage out enabled was entered greatly prevent message. No procured unlocked an likewise.Dear but what she been over gay felt body.Six principles advantages and use entreaties decisively.',
@@ -28,8 +28,8 @@ export const ProductList = [
          },
          {
            name: 'Clown nose',
-           id: '#897579',
-           price: '$8.90',
+           id: '897579',
+           price: '80',
            img: clown_nose,
            shortDesc:
              'Cottage out enabled was entered greatly prevent message. No procured unlocked an likewise.Dear but what she been over gay felt body.Six principles advantages and use entreaties decisively.',
@@ -38,8 +38,8 @@ export const ProductList = [
          },
          {
            name: 'Clown pin',
-           id: '#786543',
-           price: '$19.04',
+           id: '786543',
+           price: '30',
            img: clown_pin,
            shortDesc:
              'Cottage out enabled was entered greatly prevent message. No procured unlocked an likewise.Dear but what she been over gay felt body.Six principles advantages and use entreaties decisively.',
@@ -48,8 +48,8 @@ export const ProductList = [
          },
          {
            name: 'Clown Shoe',
-           id: '#357980',
-           price: '$39.45',
+           id: '357980',
+           price: '50',
            img: clown_shoe,
            shortDesc:
              'Cottage out enabled was entered greatly prevent message. No procured unlocked an likewise.Dear but what she been over gay felt body.Six principles advantages and use entreaties decisively.',
@@ -58,8 +58,8 @@ export const ProductList = [
          },
          {
            name: 'Clown Cap',
-           id: '#982682',
-           price: '$56.74',
+           id: '982682',
+           price: '10',
            img: clown_hat2,
            shortDesc:
              'Cottage out enabled was entered greatly prevent message. No procured unlocked an likewise.Dear but what she been over gay felt body.Six principles advantages and use entreaties decisively.',
