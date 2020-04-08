@@ -9,25 +9,14 @@ const Nav = () => {
   return (
     <div className="Nav">
       <nav>
-        <div
-          className="hamburger"
-          onClick={() => {
-            const navLinks = document.querySelector('.nav-links');
-            const links = document.querySelectorAll('.nav-links li');
-            navLinks.classList.toggle('open');
-          }}
-        >
-          <div className="line"></div>
-          <div className="line"></div>
-          <div className="line"></div>
-        </div>
+        
         <Link style={navStyle} to="/">
           <li id="logo2">
             <a href="#">Clown Store</a>
           </li>
         </Link>
         <ul className="nav-links">
-          <Link style={navStyle} to="/home">
+          <Link style={navStyle} to="/">
             <li id="logo">
               <a href="#">Clown Store</a>
             </li>

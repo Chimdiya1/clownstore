@@ -5,6 +5,7 @@
     flex-direction: column;
     background-color: rgb(235, 235, 235);
     align-items: center;
+    padding-top: 10vh;
 }
 .cart_item{
     margin-top: 2em;

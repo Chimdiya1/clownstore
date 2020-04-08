@@ -17,6 +17,9 @@
     text-align: left;
     width: 40%;
     margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .col2{
     font-size: 12px;
