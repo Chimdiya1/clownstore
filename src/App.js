@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Header from './Components/header';
 import Home from './Components/Home';
 import Products from './Components/Products';
 import { ProductList } from './Components/ProductList';
 import ProductPage from './Components/ProductPage'
+import Prompt from './Components/Prompt'
 import ShopCart from './Components/ShopCart'
 import CartContextProvider from './contexts/CartContext';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
@@ -17,6 +18,7 @@ function App() {
       />
     );
   });
+  
   return (
     <Router>
       <div className="App">
@@ -28,6 +30,7 @@ function App() {
             <Route path="/cart" component={ShopCart} />
             {ProductPages}
           </Switch>
+          
         </CartContextProvider>
       </div>
     </Router>

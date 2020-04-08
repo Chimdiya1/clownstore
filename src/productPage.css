@@ -64,6 +64,25 @@
     justify-content: space-between;
     margin-bottom: 10vh;
 }
+.prompt{
+    margin-top: 2em;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    display: flex;
+    width: 80%;
+    align-content: center;
+    justify-content: center;
+}
+.prompt div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    height: 3em;
+    background: rgb(170, 255, 148);   
+    border-radius: 10px; 
+}
 .row3 button{
     width: 40%;
     border: none;
