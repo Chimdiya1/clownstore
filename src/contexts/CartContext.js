@@ -5,7 +5,10 @@ const CartContextProvider = (props) => {
   const [cart, setCart] = useState([]);
   const [total, setTotal] = useState(0);
   const [added, setadded] = useState( false );
-
+  const [checkOut, setCheckOut] = useState(false);
+  const changeCheck = () => {
+    setCheckOut(!checkOut)
+  }
     const changeAdd = () => {
     
           setadded(!added);
@@ -52,6 +55,8 @@ const CartContextProvider = (props) => {
         addTotal,
         added,
         changeAdd,
+        checkOut,
+        changeCheck
       }}
     >
       {props.children}
