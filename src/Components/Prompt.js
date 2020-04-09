@@ -9,7 +9,7 @@ const Prompt = () => {
             <div className="prompt" onClick={() => changeAdd()}>
                 <div>
                     <p>Added to cart</p>
-                    <p>x</p>
+                    <p id="x">x</p>
                 </div>
           
             </div>

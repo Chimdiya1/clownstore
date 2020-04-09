@@ -9,22 +9,14 @@ const Nav = () => {
   return (
     <div className="Nav">
       <nav>
-        
-        <Link style={navStyle} to="/">
-          <li id="logo2">
-            <a href="#">Clown Store</a>
-          </li>
-        </Link>
         <ul className="nav-links">
           <Link style={navStyle} to="/">
             <li id="logo">
-              <a href="#">Clown Store</a>
+              Clown Store
             </li>
           </Link>
           <Link style={navStyle} to="/products">
-            <li>
-              <a href="#">Products</a>
-            </li>
+            <li id="products">Products</li>
           </Link>
           <Link style={navStyle} to="cart">
             <li>

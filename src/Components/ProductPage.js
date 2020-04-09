@@ -1,27 +1,20 @@
-import React, {useContext} from 'react';
+import React, { useContext } from 'react';
 import '../productPage.css';
 import { CartContext } from '../contexts/CartContext';
 import { Link } from 'react-router-dom';
-import Prompt from './Prompt'
+import Prompt from './Prompt';
 
 const ProductPage = (props) => {
   const navStyle = {
     textDecoration: 'none',
   };
   const { addItem } = useContext(CartContext);
-  const {added, changeAdd} = useContext(CartContext);
+  const { added, changeAdd } = useContext(CartContext);
 
   const item = props.item;
   return (
     <div className="product_page">
-      <div
-        className="row1"
-        onClick={() => {
-          if (!added) {
-            changeAdd();
-          }
-        }}
-      >
+      <div className="row1">
         <img src={item.img} alt={item.name}></img>
       </div>
       <div className="row2">

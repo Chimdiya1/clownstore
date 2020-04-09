@@ -20,6 +20,7 @@
     align-items: center;
 }
 .inner_row{
+        margin-top: 1em;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -66,13 +67,16 @@
 }
 .prompt{
     margin-top: 2em;
-    height: 100vh;
+    height: 10vh;
     position: absolute;
     top: 0;
     display: flex;
     width: 80%;
     align-content: center;
     justify-content: center;
+}
+.prompt div:hover{
+    cursor: pointer;
 }
 .prompt div{
     display: flex;
@@ -126,4 +130,56 @@
     color: white;
     width: 100%;
     height: 3em;
+}
+@media screen and (min-width:768px){
+    .row1{
+    background-color: #fff;
+        border-radius: .4em;
+    display: flex;
+    max-width: 40em;
+    align-items: left;
+}
+.inner_row{
+    margin-top: 1em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 40em;
+}
+.inner{
+    font-size: 1em;
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+.price{
+    font-weight: bold;
+    width: 30%;
+    text-align: center;
+    background-color: rgb(72, 236, 86);
+    height: 2em;
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.desc{
+    max-width: 80%;
+    font-size: 1.2em;
+    line-height: 1.2em;
+}
+.row3{
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10vh;
+}
+
+/*cartitem*/
+.row4{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
 }
