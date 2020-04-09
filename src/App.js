@@ -7,7 +7,7 @@ import ProductPage from './Components/ProductPage'
 import Prompt from './Components/Prompt'
 import ShopCart from './Components/ShopCart'
 import CartContextProvider from './contexts/CartContext';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import {HashRouter as Router, Switch, Route} from 'react-router-dom'
 
 function App() {
   const ProductPages = ProductList.map((item) => {
