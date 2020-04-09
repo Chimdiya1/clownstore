@@ -62,7 +62,8 @@
       background-color: #fff;
   max-width: 100%;
       border:none;
-      
+      box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+      border-radius: .4em;
 
 }
 .product_item:first-of-type{
