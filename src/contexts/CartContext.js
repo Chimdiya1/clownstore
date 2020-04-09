@@ -14,24 +14,32 @@ const CartContextProvider = (props) => {
   const resetTotal = () => {
     setTotal(1);
   };
-  const addTotal = (num) => {
+  const addTotal = () => {
     let subsum = 0;
-    cart.forEach((item) => {
-      subsum += item.price * num;
+    cart.map((item) => {
+      subsum += item.total;
     });
     setTotal(subsum);
   };
   const addItem = (item) => {
+    item.inCart = true
+    item.count = 1
+    const price = item.price; 
+    item.total=price
     if (cart.length === 0) {
       setCart([item]);
     } else {
       if (!cart.includes(item)) {
-        setCart([...cart, item]);
+        setCart([...cart, item], () => {
+          addTotal();
+        });
       }
     }
+    
   };
   const removeItem = (removed) => {
-    setCart(cart.filter((item) => item !== removed));
+    setCart(cart.filter((item) => item !== removed))
+    addTotal()
   };
   return (
     <CartContext.Provider

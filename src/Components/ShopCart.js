@@ -5,7 +5,11 @@ import '../shopCart.css';
 const ShopCart = () => {
   
   const { cart, total,addTotal,resetTotal } = useContext(CartContext);
+   useEffect(() => {
 
+     addTotal();
+     
+   }, [cart]);
 
   const CartLists = cart.length ? (
     cart.map((item) => {
